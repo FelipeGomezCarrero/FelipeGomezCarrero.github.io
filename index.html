@@ -5,106 +5,240 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Felipe Gomez | Software Engineer</title>
   <meta name="description" content="Personal CV website for Felipe Gomez, software engineer and BSc (Hons) Computing graduate from Birkbeck, University of London.">
+  <meta name="theme-color" content="#273534">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23273534'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='700' fill='%233b82f6' text-anchor='middle'%3EFG%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <header class="section">
-    <h1>Felipe Gomez</h1>
-    <p class="lead">Software engineer with a BSc (Hons) in Computing from Birkbeck, University of London, and a foundation in software engineering, data structures, and artificial intelligence.</p>
-    <ul class="contact-list">
-      <li><a href="mailto:felipe.gomez.vs@protonmail.com">felipe.gomez.vs@protonmail.com</a></li>
-      <li><a href="https://github.com/FelipeGomezCarrero">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/felipe-gomez-com/">LinkedIn</a></li>
-    </ul>
-    <p><a class="cv-link" href="assets/Felipe_Gomez_CV.pdf">Download CV (PDF)</a></p>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo">Felipe Gomez</a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn-ghost btn-sm" href="assets/Felipe_Gomez_CV.pdf">Resume</a>
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle color theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg>
+        </button>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section class="section" aria-labelledby="about-heading">
-      <h2 id="about-heading">About</h2>
-      <p>Software engineer and BSc (Hons) Computing graduate from Birkbeck, University of London (graduated July 2026) with strong academic performance and a solid foundation in software engineering, data structures, and artificial intelligence. Experienced in developing full-stack applications, database systems, and data-driven software solutions using Python, Java, SQL, and modern development tools.</p>
-      <p>Motivated by building scalable and reliable software systems, with particular interests in cloud-native architectures, machine learning applications, and data engineering, I aim to contribute to the development of innovative, high-impact software solutions while continuing to expand my expertise in AI-driven technologies and modern software engineering practices.</p>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Software Engineer</p>
+          <h1>Felipe Gomez</h1>
+          <p class="hero-tagline gradient-text">BSc (Hons) Computing, Birkbeck · AI &amp; Software Systems</p>
+          <p class="hero-lead">Software engineer with a foundation in software engineering, data structures, and artificial intelligence. Experienced in developing full-stack applications, database systems, and data-driven software solutions using Python, Java, SQL, and modern development tools.</p>
+          <div class="hero-actions">
+            <a class="btn-primary" href="assets/Felipe_Gomez_CV.pdf">Download CV</a>
+            <a class="btn-ghost" href="#contact">Get in touch</a>
+          </div>
+          <ul class="social-row">
+            <li>
+              <a href="mailto:felipe.gomez.vs@protonmail.com" aria-label="Email Felipe Gomez">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/FelipeGomezCarrero" aria-label="Felipe Gomez on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.75 5.48.75 11.75c0 5.02 3.26 9.27 7.77 10.77.57.1.78-.25.78-.55v-2.14c-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.61 0-1.24.44-2.25 1.17-3.05-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.15 1.16a10.9 10.9 0 0 1 5.74 0c2.19-1.47 3.15-1.16 3.15-1.16.62 1.57.23 2.73.11 3.02.73.8 1.17 1.81 1.17 3.05 0 4.36-2.65 5.32-5.18 5.6.41.35.77 1.04.77 2.1v3.11c0 .3.2.66.79.55A11.26 11.26 0 0 0 23.25 11.75C23.25 5.48 18.27.5 12 .5Z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/felipe-gomez-com/" aria-label="Felipe Gomez on LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+              <span class="terminal-title">whoami.sh</span>
+            </div>
+            <pre class="terminal-body"><code><span class="prompt">$</span> <span class="key">whoami</span>
+felipe_gomez
+
+<span class="prompt">$</span> <span class="key">role</span>
+software_engineer
+
+<span class="prompt">$</span> <span class="key">education</span>
+bsc_hons_computing @ birkbeck
+
+<span class="prompt">$</span> <span class="key">stack</span>
+[<span class="val">python</span>, <span class="val">java</span>, <span class="val">sql</span>, <span class="val">pytorch</span>, <span class="val">aws</span>]
+
+<span class="prompt">$</span> <span class="key">status</span>
+open_to_work = <span class="val">true</span></code></pre>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="section" aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Projects</h2>
-
-      <article class="card">
-        <h3>AI-Driven Financial News Sentiment &amp; Stock Trend Analysis</h3>
-        <p class="meta">Final-Year Project · Birkbeck University</p>
-        <p>Currently developing a FinTech NLP system that analyses financial news headlines using transformer-based models to predict short-term stock trends. The project involves building a real-time data pipeline integrating news APIs, applying Python libraries for sentiment analysis, and visualising results through a TypeScript-based interactive dashboard.</p>
-        <p><strong>Tech stack:</strong> Python, transformer-based NLP models, TypeScript</p>
-      </article>
+    <section class="section" id="about">
+      <div class="wrap reveal">
+        <h2>About</h2>
+        <p>Software engineer and BSc (Hons) Computing graduate from Birkbeck, University of London (graduated July 2026) with strong academic performance and a solid foundation in software engineering, data structures, and artificial intelligence. Experienced in developing full-stack applications, database systems, and data-driven software solutions using Python, Java, SQL, and modern development tools.</p>
+        <p>Motivated by building scalable and reliable software systems, with particular interests in cloud-native architectures, machine learning applications, and data engineering, I aim to contribute to the development of innovative, high-impact software solutions while continuing to expand my expertise in AI-driven technologies and modern software engineering practices.</p>
+      </div>
     </section>
 
-    <section class="section" aria-labelledby="experience-heading">
-      <h2 id="experience-heading">Experience</h2>
-      <article>
-        <h3>Remote Coder · Outlier AI</h3>
-        <p class="meta">Mar 2025 – Present · London, UK (remote)</p>
-        <p>Evaluated and improved AI-generated code to train large language models, ensuring correctness and performance in Python and Java.</p>
-      </article>
-      <article>
-        <h3>Field Audio Systems Engineer · Events Industry (Logistics)</h3>
-        <p class="meta">1999 – 2022 · Various clients, UK &amp; Spain</p>
-        <p>Designed, installed, and maintained complex audio-visual and control systems for large-scale live events. Delivered high-reliability solutions under time-critical conditions, troubleshooting networked and digital audio infrastructures. This experience strengthened my technical precision, fault diagnosis, and systems optimization skills, directly transferable to distributed software systems and cloud operations.</p>
-      </article>
+    <section class="section" id="experience">
+      <div class="wrap reveal">
+        <h2>Experience</h2>
+        <article class="card">
+          <div class="card-head">
+            <h3>Remote Coder</h3>
+            <span class="badge">Outlier AI</span>
+          </div>
+          <p class="meta">Mar 2025 – Present · London, UK (remote)</p>
+          <p>Evaluated and improved AI-generated code to train large language models, ensuring correctness and performance in Python and Java.</p>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <h3>Field Audio Systems Engineer</h3>
+            <span class="badge">Events Industry (Logistics)</span>
+          </div>
+          <p class="meta">1999 – 2022 · Various clients, UK &amp; Spain</p>
+          <p>Designed, installed, and maintained complex audio-visual and control systems for large-scale live events. Delivered high-reliability solutions under time-critical conditions, troubleshooting networked and digital audio infrastructures. This experience strengthened my technical precision, fault diagnosis, and systems optimization skills, directly transferable to distributed software systems and cloud operations.</p>
+        </article>
+      </div>
     </section>
 
-    <section class="section" aria-labelledby="education-heading">
-      <h2 id="education-heading">Education</h2>
-      <article>
-        <h3>BSc (Hons) Computing · Birkbeck, University of London</h3>
-        <p class="meta">Graduated: July 2026 · Top-performing student (average marks &gt; 85%)</p>
-        <p>As part of my degree, I have worked on the design and implementation of multi-tier database solutions, developed dynamic web applications using HTML, CSS, JavaScript, and Java, and applied object-oriented design and complexity analysis to optimize algorithmic performance.</p>
-      </article>
-      <article>
-        <h3>IRDTA DeepLearn 2026 – 13th International School on Deep Learning</h3>
-        <p class="meta">Orléans, France · 2026</p>
-        <p>International research training school focused on recent advances in deep learning, from the Institute for Research Development, Training and Advice.</p>
-      </article>
-      <article>
-        <h3>MSc Artificial Intelligence · Queen Mary University of London</h3>
-        <p class="meta">Planned postgraduate study · Expected graduation: September 2027</p>
-        <p>Planned postgraduate study focused on practical machine learning and modern AI systems, with expected study areas including intelligent agents, computer vision, natural language processing, and AI ethics.</p>
-      </article>
+    <section class="section" id="projects">
+      <div class="wrap reveal">
+        <h2>Projects</h2>
+        <article class="card">
+          <div class="card-head">
+            <h3>AI-Driven Financial News Sentiment &amp; Stock Trend Analysis</h3>
+            <span class="badge">Final-Year Project</span>
+          </div>
+          <p class="meta">Birkbeck University</p>
+          <p>Currently developing a FinTech NLP system that analyses financial news headlines using transformer-based models to predict short-term stock trends. The project involves building a real-time data pipeline integrating news APIs, applying Python libraries for sentiment analysis, and visualising results through a TypeScript-based interactive dashboard.</p>
+          <ul class="tag-row">
+            <li class="badge">Python</li>
+            <li class="badge">Transformer NLP</li>
+            <li class="badge">TypeScript</li>
+          </ul>
+        </article>
+      </div>
     </section>
 
-    <section class="section" aria-labelledby="skills-heading">
-      <h2 id="skills-heading">Skills</h2>
-      <h3>Computing Skills</h3>
-      <ul>
-        <li>Python</li>
-        <li>Java</li>
-        <li>PyTorch</li>
-        <li>NumPy</li>
-        <li>Transformer-based NLP models</li>
-        <li>Git/GitHub</li>
-        <li>Model performance evaluation</li>
-        <li>AWS</li>
-        <li>Linux</li>
-      </ul>
-      <h3>Soft Skills</h3>
-      <ul>
-        <li>Strong analytical thinking with the ability to decompose complex systems and optimisation problems</li>
-        <li>Experimental mindset: comfortable designing, testing, and iterating on models and system configurations</li>
-        <li>Ability to reason about trade-offs (performance, compute, scalability) in technical decision-making</li>
-        <li>Self-directed learner with proven ability to quickly acquire new tools and concepts in AI/ML</li>
-        <li>Effective collaborator with experience working across technical and operational environments</li>
-        <li>Clear communicator, able to explain technical ideas and results in a structured and concise manner</li>
-      </ul>
-      <h3>Spoken Languages</h3>
-      <ul>
-        <li>English – Proficient</li>
-        <li>Spanish – Native</li>
-        <li>German – Elementary</li>
-        <li>French – Elementary</li>
-      </ul>
+    <section class="section" id="skills">
+      <div class="wrap reveal">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div>
+            <h3>Computing</h3>
+            <ul class="tag-row">
+              <li class="badge">Python</li>
+              <li class="badge">Java</li>
+              <li class="badge">PyTorch</li>
+              <li class="badge">NumPy</li>
+              <li class="badge">Transformer NLP</li>
+              <li class="badge">Git/GitHub</li>
+              <li class="badge">Model evaluation</li>
+              <li class="badge">AWS</li>
+              <li class="badge">Linux</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Soft Skills</h3>
+            <ul class="soft-skills">
+              <li>Strong analytical thinking with the ability to decompose complex systems and optimisation problems</li>
+              <li>Experimental mindset: comfortable designing, testing, and iterating on models and system configurations</li>
+              <li>Ability to reason about trade-offs (performance, compute, scalability) in technical decision-making</li>
+              <li>Self-directed learner with proven ability to quickly acquire new tools and concepts in AI/ML</li>
+              <li>Effective collaborator with experience working across technical and operational environments</li>
+              <li>Clear communicator, able to explain technical ideas and results in a structured and concise manner</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Spoken Languages</h3>
+            <ul class="tag-row">
+              <li class="badge">English – Proficient</li>
+              <li class="badge">Spanish – Native</li>
+              <li class="badge">German – Elementary</li>
+              <li class="badge">French – Elementary</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="wrap reveal">
+        <h2>Education</h2>
+        <article class="card">
+          <div class="card-head">
+            <h3>BSc (Hons) Computing</h3>
+            <span class="badge">Birkbeck, University of London</span>
+          </div>
+          <p class="meta">Graduated: July 2026 · Top-performing student (average marks &gt; 85%)</p>
+          <p>As part of my degree, I have worked on the design and implementation of multi-tier database solutions, developed dynamic web applications using HTML, CSS, JavaScript, and Java, and applied object-oriented design and complexity analysis to optimize algorithmic performance.</p>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <h3>IRDTA DeepLearn 2026 – 13th International School on Deep Learning</h3>
+            <span class="badge">Orléans, France</span>
+          </div>
+          <p class="meta">2026</p>
+          <p>International research training school focused on recent advances in deep learning, from the Institute for Research Development, Training and Advice.</p>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <h3>MSc Artificial Intelligence</h3>
+            <span class="badge">Queen Mary University of London</span>
+          </div>
+          <p class="meta">Planned postgraduate study · Expected graduation: September 2027</p>
+          <p>Planned postgraduate study focused on practical machine learning and modern AI systems, with expected study areas including intelligent agents, computer vision, natural language processing, and AI ethics.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="wrap reveal">
+        <h2>Contact</h2>
+        <p class="section-lead">Open to software engineering roles and collaborations. Reach out through any of the channels below.</p>
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:felipe.gomez.vs@protonmail.com">
+            <span class="label">Email</span>
+            <span class="value">felipe.gomez.vs@protonmail.com</span>
+          </a>
+          <a class="contact-card" href="https://github.com/FelipeGomezCarrero">
+            <span class="label">GitHub</span>
+            <span class="value">FelipeGomezCarrero</span>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/felipe-gomez-com/">
+            <span class="label">LinkedIn</span>
+            <span class="value">felipe-gomez-com</span>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="section">
-    <p>Last updated: <time datetime="2026-07-14">14 July 2026</time></p>
+  <footer class="footer">
+    <div class="wrap">
+      <p>© 2026 Felipe Gomez · Last updated <time datetime="2026-07-14">14 July 2026</time></p>
+    </div>
   </footer>
+
+  <script src="assets/main.js" defer></script>
 </body>
 </html>
