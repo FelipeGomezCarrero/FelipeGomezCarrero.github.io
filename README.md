@@ -2,7 +2,7 @@
 
 Static personal CV website for GitHub Pages.
 
-Live URL: https://felipe-gomez.github.io/
+Live URL: https://felipegomezcarrero.github.io/FelipeGomez.github.io/
 
 ## File layout
 
